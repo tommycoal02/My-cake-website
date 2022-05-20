@@ -1,0 +1,520 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     /* padding-inline: 15px; */
+     /* background: rgb(236, 229, 236); */
+     margin-block-end: 0;
+     width: 100%;
+}
+/* 
+{
+font-family: 'El Messiri', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Send Flowers', cursive;
+font-family: 'Yeseva One', cursive;
+
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html{
+     background: rgba(245, 245, 245, 0.822);
+     font-size: 16px;
+     padding: 10px;
+     color: rgba(0, 0, 0, 0.678);
+}
+h1{
+     font-family: 'El Messiri', sans-serif;
+     font-weight: 100;
+     font-size: 3.5rem;
+     color: black;
+}
+p{
+     font-family: 'El Messiri', sans-serif;
+     font-size: 1.2rem;
+}
+h3{
+     font-family: 'Great Vibes', cursive;
+     font-weight: 100;
+     font-size: 3rem;
+     color: black;
+}
+h4{
+     text-transform: uppercase;
+}
+.button{
+     padding: 10px;
+}
+#firstPage, #secondPage, #thirdPage, #footer{
+     margin-block: 90px;
+}
+
+
+
+
+.menu_bar{
+     background-color: blueviolet;
+     height: 120px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content:  space-between;
+     padding-block:0 ;
+     padding-inline: 5%;
+     text-transform: uppercase;
+}
+#siteLogo{
+     color: white;
+     font-size: 2rem;
+}
+.menu_bar ul{
+     list-style: none;
+     display: flex;
+}
+.menu_bar ul li{
+     padding: 10px 30px;
+     position: relative;
+}
+.menu_bar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 1.2rem;
+     transition: all 0.5s;
+}
+.menu_bar ul li :hover{
+     color: blue;
+}
+.dropdown_menu{
+     display: none;
+}
+.menu_bar ul li:hover .dropdown_menu{
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 100%;
+     background-color: blueviolet;
+}  
+.menu_bar ul li:hover .dropdown_menu ul{
+     display: block;
+     margin: 10px;
+     padding-inline-start: 0;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{    
+     width: 150px;
+     padding: 10px;
+}
+.fa-solid{
+     float: right;
+     margin-left:10px;
+     padding-top: 3px;
+}
+
+
+
+ header {
+     text-transform: uppercase;
+     font-weight:200;
+}
+#siteLogo{
+     font-style: italic;
+     font-family: 'Euphoria Script', cursive;
+     font-family: 'Raleway', sans-serif;
+}
+a{
+     text-decoration: none;
+     font-size: 1rem;
+}
+
+
+
+/* firstpage */
+#firstPage{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+.firstSectionOf1stPage img{
+     height: 700px;
+}
+
+.secondSectionOf1stPage{
+     padding-inline: 50px;
+     /* width: 50%; */
+}
+#secondPage {
+     text-align: center;
+     padding-inline: 100px;
+     justify-content: center;
+}
+.innerSecondSection{
+     display: flex;
+     justify-content: space-around;
+
+}
+.secondImg{
+     width:350px;
+}
+#thirdPage{
+     display: flex;
+     /* height: 500px; */
+}
+.thirdFirst, .thirdSecond{
+     text-align: center;
+}
+.thirdFirst img{
+     width: 400px;
+     width: auto;
+}
+.thirdSecond{
+     padding-inline:50px;
+}
+
+#footer{
+     margin-bottom: 0;
+}
+
+footer {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     background-color: rgb(195, 176, 195);
+     padding-bottom: 100px;
+     padding-inline: 10px;
+}
+.social a{
+     margin: 6px;
+     font-size: 30px;
+}
+
+/* Celebration Page  */
+#firstPageOfCelebration{
+     text-align: center;
+     padding-inline: 200px;
+}
+
+#imagesOfCelebration{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 10px;
+     margin-block-start: 12px;
+     padding: 20px;
+}
+#imagesOfCelebration div{
+     height: 500px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.celebrateCakes-1{
+     background-image: url(/img/annie-spratt-_4iLsr5p-dY-unsplash.jpg);
+     width: 100%;
+}
+.celebrateCakes-2{
+     background-image: url(/img/lena-mytchyk-Rejlvd47WjI-unsplash.jpg);
+
+}
+.celebrateCakes-3{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+
+}
+.celebrateCakes-4{
+     background-image: url(/img/stephen-wheeler-LRIQuZyxKRM-unsplash\ \(2\).jpg);
+
+}
+.celebrateCakes-5{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+
+}
+.celebrateCakes-6{
+     background-image: url(/img/imants-kaziluns-Z30Jpgmx2UY-unsplash.jpg);
+
+}
+.celebrateCakes-7{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+}
+.celebrateCakes-8{
+     background-image: url(/img/slashio-photography-T5KPTbbK-_E-unsplash\ \(1\).jpg);
+}
+.celebrateCakes-9{
+     background-image: url(/img/stephen-wheeler-LRIQuZyxKRM-unsplash\ \(2\).jpg);
+}
+
+/* wedding page    */
+
+.Weddingcake-1{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+}
+.Weddingcake-2{
+     background-image: url(/img/wedding-dreamz-YAZvMNdxFSY-unsplash.jpg);
+}
+.Weddingcake-3{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+}
+.Weddingcake-4{
+     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+}
+.Weddingcake-5{
+     background-image: url(/img/wedding-dreamz-YAZvMNdxFSY-unsplash.jpg);
+}
+.Weddingcake-6{
+     background-image: url(/img/thomas-william-U7N6XFvTBjU-unsplash.jpg);
+
+}
+
+
+/* About us page */
+#ourStoryFirstPage{
+     margin-top: 100px;
+}
+
+.aboutStoryLine-1,.aboutStoryLine-2{
+     text-align: center;
+
+}
+.bakersImageAndFirstStory{
+     display: flex;
+     padding-inline: 30px;
+}
+.bakersImageAndFirstStory img{
+     padding: 50px;
+     width: auto;
+     height: 700px;
+}
+
+.aboutStoryLine-2{
+     padding-inline:120px;
+}
+.biggerInnerParagraph{
+     font-size:1.3rem ;
+     font-family:'Roboto Slab', serif;
+}
+#ourStoryLastPage{
+     text-align: center;
+     background-image: url(/img/taylor-kiser\ \ qxTQbjjQZI-unsplash.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position:center;
+     padding: 100px 40px;
+     height: 500px;
+     background-color: white;
+     /* color: rgba(0, 0, 0, 0.897); */
+     color: white; 
+     margin: 10px;
+     background-clip: text;
+
+}
+#ourStoryLastPage h4, h2{
+     color: black;
+}
+#ourStoryLastPage p{
+     /* background-color: rgba(255, 255, 255, 0.541); */
+     background-color: black;
+     background-clip: text;
+     -webkit-background-clip: text;
+}
+.curvyStyle{
+     font-family:'Great Vibes', cursive;;
+}
+#ourStoryLastPage h2{
+     font-size: 2.5rem;
+}
+
+/* contact page  */
+#contactUsPage{
+     text-align: center;
+     background-color: whitesmoke;
+}
+
+.contactForm{
+     display: flex;
+     flex-direction: column;
+     margin-inline: 10%;
+     margin-block:10px ;
+     text-align: left;    
+}
+
+.contactForm input{
+     padding: 20px;
+     margin-block-end: 20px;
+}
+#writeYourMessage{
+     padding-bottom: 100px;
+}
+.contactForm button{
+     padding: 12px;
+     margin-inline: 30%;
+}
+#contactFilling{
+     display: flex;
+     flex-direction: row;
+     padding-block-start: 50px;
+     justify-content: center;
+}
+#fillingSect1{
+     width: 30%;
+     padding-inline-end:10px;
+     background: rgb(236, 229, 236);
+}
+#fillingSect2{
+     padding: 10px;
+}
+
+.fab{
+     font-size: 3rem;
+     margin: 10px;
+}
+.fa-instagram{
+     color: rgba(128, 0, 128, 0.801);
+}
+.fa-twitter{
+     color: rgb(88, 88, 236);
+}
+
+
+
+
+
+
+@media screen and (max-width: 925px){
+     h3{
+          font-size: 2.5rem;
+     }
+     #firstPage, #secondPage, #thirdPage{
+          padding: 15px;
+     }
+     #firstPage, #thirdPage{
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+     }
+     .firstSectionOf1stPage img{
+          width: 100%;
+          height: auto;
+     }
+     .secondSectionOf1stPage{
+          width: 100%;
+          padding: 0;
+          justify-content: center;
+     }
+     #secondPage .innerSecondSection{
+          /* background-color: red; */
+          flex-direction: column;
+          justify-content: center;
+     }
+     .secondImg{
+          width:100%;
+     }
+     #secondPage, #thirdPage{
+          height: auto;
+     }
+     .thirdFirst, .thirdSecond{
+          width: 100%;
+          text-align: center;
+     }
+     .thirdFirst img{
+          width: 100%;
+     }
+     footer{
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+     .bakersImageAndFirstStory{
+          flex-direction: column;
+          padding-inline: 30px;
+          text-align: center;
+     }
+     .bakersImageAndFirstStory img{
+          height: auto;
+          width: 100%;
+          padding: 5px;
+          
+     }
+     /* celebrtion page */
+     #imagesOfCelebration{
+          grid-template-columns: repeat(2,1fr);
+          gap: 10px;
+          padding: 10px;
+     }
+     #firstPageOfCelebration{
+          text-align: center;
+          padding-inline: 20px;
+     }
+}
+@media screen and (max-width: 600px){
+     html{
+          font-size: 11px
+     }
+     h3{
+          font-size: 2rem;
+     }
+     
+     #imagesOfCelebration{
+          grid-template-columns: repeat(1,1fr);
+          gap: 10px;
+          /* background-color: brown; */
+     }
+     #contactFilling{
+          display: flex;
+          flex-direction: column;
+     }
+     #fillingSect1{
+          width: 100%;
+          padding-inline-end:10px;
+     }
+     .bakersImageAndFirstStory img{
+          width: 100%;
+         height: 400px;
+     }
+     .aboutStoryLine-2{
+          padding: 20px;
+          /* justify-content: center; */
+          align-items: center;
+     }
+     #ourStoryLastPage{
+
+          height: 400px;
+          padding: 0;
+          margin: 0;
+          padding-block-start: 100px;
+     }
+     #firstPageOfCelebration img{
+          width: 100%;
+          height: 400px;
+     }
+     
+}
+
+
+   
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
