@@ -164,8 +164,9 @@ a{
 }
 
 .secondSectionOf1stPage{
-     padding-inline: 50px;
-     /* width: 50%; */
+     padding-inline: 100px;
+     text-align: center;
+
 }
 #secondPage {
      text-align: center;
