@@ -46,7 +46,7 @@ font-family: 'Yeseva One', cursive;
 
 html{
      font-size: 16px;
-     /* padding: 10px; */
+     padding: 10px;
      color: rgba(0, 0, 0, 0.678);
 }
 h1{
@@ -70,6 +70,9 @@ h4{
 }
 .button{
      padding: 10px;
+}
+img{
+     border-radius: 3px;
 }
 #firstPage, #secondPage, #thirdPage, #footer{
      margin-block: 90px;
@@ -163,6 +166,7 @@ a{
 
 .firstSectionOf1stPage img{
      height: 700px;
+     border-radius: 3px;
 }
 
 .secondSectionOf1stPage{
@@ -234,7 +238,11 @@ footer {
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
+     border-radius: 3px;
 }
+/* .celebrateCakes{
+     border: 3px solid red;
+} */
 
 .celebrateCakes-1{
      background-image: url(/img/annie-spratt-_4iLsr5p-dY-unsplash.jpg);
@@ -353,7 +361,7 @@ footer {
 /* contact page  */
 #contactUsPage{
      text-align: center;
-     background-color: whitesmoke;
+     /* background-color: whitesmoke; */
 }
 
 .contactForm{
@@ -479,6 +487,12 @@ footer {
      h3{
           font-size: 2rem;
      }
+     #firstPage, #secondPage, #thirdPage, #footer{
+          margin-block: 40px;
+     }
+     #firstPage{
+          margin-top: 10px;
+     }
      
      #imagesOfCelebration{
           grid-template-columns: repeat(1,1fr);
@@ -514,6 +528,11 @@ footer {
           height: 400px;
      }
      
+     .fa-solid{
+          float: right;
+          margin-left:10px;
+          padding-top: 3px;
+     }
 }
 
 
