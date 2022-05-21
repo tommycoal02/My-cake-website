@@ -26,6 +26,8 @@ body {
      /* background: rgb(236, 229, 236); */
      margin-block-end: 0;
      width: 100%;
+     padding: 10px;
+     background-color: wheat;
 }
 /* 
 {
@@ -43,9 +45,8 @@ font-family: 'Yeseva One', cursive;
 /*******************************************/
 
 html{
-     background: rgba(245, 245, 245, 0.822);
      font-size: 16px;
-     padding: 10px;
+     /* padding: 10px; */
      color: rgba(0, 0, 0, 0.678);
 }
 h1{
@@ -78,7 +79,7 @@ h4{
 
 
 .menu_bar{
-     background-color: blueviolet;
+     background-color: rgb(195, 176, 195);
      height: 120px;
      width: 100%;
      display: flex;
@@ -87,6 +88,7 @@ h4{
      padding-block:0 ;
      padding-inline: 5%;
      text-transform: uppercase;
+     border-radius: 4px;
 }
 #siteLogo{
      color: white;
@@ -117,7 +119,7 @@ h4{
      position: absolute;
      left: 0;
      top: 100%;
-     background-color: blueviolet;
+     background-color: rgb(195, 176, 195);
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -166,7 +168,7 @@ a{
 .secondSectionOf1stPage{
      padding-inline: 100px;
      text-align: center;
-
+     /* width: 50%; */
 }
 #secondPage {
      text-align: center;
