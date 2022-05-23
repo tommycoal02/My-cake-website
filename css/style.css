@@ -82,7 +82,7 @@ img{
 
 
 .menu_bar{
-     background-color: rgb(195, 176, 195);
+     background-color: rgb(90,183,198);
      height: 120px;
      width: 100%;
      display: flex;
@@ -92,6 +92,9 @@ img{
      padding-inline: 5%;
      text-transform: uppercase;
      border-radius: 5px;
+}
+.menu_bar img{
+     height: 100%;
 }
 #siteLogo{
      color: white;
@@ -122,7 +125,8 @@ img{
      position: absolute;
      left: 0;
      top: 100%;
-     background-color: rgb(195, 176, 195);
+     /* background-color: rgb(195, 176, 195); */
+     background-color: rgb(90,183,198);
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -141,7 +145,7 @@ img{
 
 
 
- header {
+ header{
      text-transform: uppercase;
      font-weight:200;
 }
@@ -206,15 +210,17 @@ a{
      margin-bottom: 0;
 }
 
-footer {
+footer{
      display: flex;
      justify-content: space-between;
      text-align: center;
-     background-color: rgb(195, 176, 195);
+     background-color: rgb(137, 120, 151);
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
+     /* margin-bottom: 0; */
 }
+rgb(115,69,154)
 .social a{
      margin: 6px;
      font-size: 30px;
@@ -484,6 +490,10 @@ footer {
      html{
           font-size: 11px
      }
+     .menu_bar img{
+          height: 33%;
+          width:auto;
+     }
      h3{
           font-size: 2rem;
      }
@@ -535,6 +545,13 @@ footer {
      }
 }
 
+/* @media screen and (max-width: 600px){
+
+}
+.menu_bar img{
+     height: 19%;
+     width:auto;
+} */
 
    
 
