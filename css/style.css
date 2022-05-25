@@ -79,8 +79,6 @@ img{
 }
 
 
-
-
 .menu_bar{
      background-color: rgb(90,183,198);
      height: 120px;
@@ -335,28 +333,20 @@ footer{
 }
 #ourStoryLastPage{
      text-align: center;
-     background-image: url(/img/taylor-kiser\ \ qxTQbjjQZI-unsplash.jpg);
+     background-image: url(/img//cover.png);
+     -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
      background-repeat: no-repeat;
      background-size:cover;
      background-position:center;
      padding: 100px 40px;
      height: 500px;
-     background-color: white;
-     /* color: rgba(0, 0, 0, 0.897); */
-     color: white; 
      margin: 10px;
-     background-clip: text;
-
 }
 #ourStoryLastPage h4, h2{
      color: black;
 }
-#ourStoryLastPage p{
-     /* background-color: rgba(255, 255, 255, 0.541); */
-     background-color: black;
-     background-clip: text;
-     -webkit-background-clip: text;
-}
+
 .curvyStyle{
      font-family:'Great Vibes', cursive;;
 }
