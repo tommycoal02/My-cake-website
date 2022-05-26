@@ -197,8 +197,8 @@ a{
      text-align: center;
 }
 .thirdFirst img{
-     width: 400px;
-     width: auto;
+     /* width: 400px; */
+     /* width: auto; */
 }
 .thirdSecond{
      padding-inline:50px;
