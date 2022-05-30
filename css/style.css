@@ -80,7 +80,7 @@ img{
 
 
 .menu_bar{
-     background-color: rgb(90,183,198);
+     border-bottom: 2px rgba(0, 0, 0, 0.432) solid;
      height: 120px;
      width: 100%;
      display: flex;
@@ -107,13 +107,13 @@ img{
      position: relative;
 }
 .menu_bar ul li a{
-     color: white;
+     color: rgba(0, 0, 0, 0.514);
      text-decoration: none;
      font-size: 1.2rem;
      transition: all 0.5s;
 }
 .menu_bar ul li :hover{
-     color: blue;
+     color: rgb(216, 169, 81);;
 }
 .dropdown_menu{
      display: none;
@@ -123,8 +123,9 @@ img{
      position: absolute;
      left: 0;
      top: 100%;
-     /* background-color: rgb(195, 176, 195); */
-     background-color: rgb(90,183,198);
+     /* background-color: rgb(90,183,198); */
+     background-color: rgb(230, 219, 199);
+     border: 1px solid rgb(196, 179, 147);; 
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -212,11 +213,15 @@ footer{
      display: flex;
      justify-content: space-between;
      text-align: center;
-     background-color: rgb(137, 120, 151);
+     border-top: 2px solid rgba(0, 0, 0, 0.445);
+     /* background-color: rgb(137, 120, 151); */
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
      /* margin-bottom: 0; */
+}
+.footerInner-4{
+     margin-inline-start:10px ;
 }
 
 .social a{
@@ -244,9 +249,7 @@ footer{
      background-repeat: no-repeat;
      border-radius: 3px;
 }
-/* .celebrateCakes{
-     border: 3px solid red;
-} */
+
 
 .celebrateCakes-1{
      background-image: url(/img/annie-spratt-_4iLsr5p-dY-unsplash.jpg);
@@ -532,6 +535,11 @@ footer{
           float: right;
           margin-left:10px;
           padding-top: 3px;
+     }
+     #footer{
+          /* color: red; */
+          margin-bottom: 10px;
+          padding-bottom: 20px;
      }
 }
 
