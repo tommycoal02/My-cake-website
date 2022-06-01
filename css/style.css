@@ -91,13 +91,11 @@ img{
      text-transform: uppercase;
      border-radius: 5px;
 }
-.menu_bar img{
+.menu_bar #websiteLogo{
      height: 100%;
+     cursor: pointer;
 }
-#siteLogo{
-     color: white;
-     font-size: 2rem;
-}
+
 .menu_bar ul{
      list-style: none;
      display: flex;
@@ -207,6 +205,9 @@ a{
 
 #footer{
      margin-bottom: 0;
+}
+.more{
+     text-align: justify;
 }
 
 footer{
@@ -360,7 +361,6 @@ footer{
 /* contact page  */
 #contactUsPage{
      text-align: center;
-     /* background-color: whitesmoke; */
 }
 
 .contactForm{
@@ -483,7 +483,7 @@ footer{
      html{
           font-size: 11px
      }
-     .menu_bar img{
+     .menu_bar #websiteLogo{
           height: 33%;
           width:auto;
      }
