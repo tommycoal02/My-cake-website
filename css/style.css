@@ -79,6 +79,7 @@ img{
 }
 
 
+
 .menu_bar{
      border-bottom: 2px rgba(0, 0, 0, 0.432) solid;
      height: 120px;
@@ -540,6 +541,9 @@ footer{
           /* color: red; */
           margin-bottom: 10px;
           padding-bottom: 20px;
+     }
+     #button{
+          background-color: white;
      }
 }
 
