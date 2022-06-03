@@ -123,8 +123,7 @@ img{
      left: 0;
      top: 100%;
      /* background-color: rgb(90,183,198); */
-     background-color: rgb(230, 219, 199);
-     border: 1px solid rgb(196, 179, 147);; 
+     background-color: rgb(219, 198, 157); 
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -146,6 +145,7 @@ img{
  header{
      text-transform: uppercase;
      font-weight:200;
+     background-color: rgb(219, 198, 157);
 }
 #siteLogo{
      font-style: italic;
@@ -196,10 +196,7 @@ a{
 .thirdFirst, .thirdSecond{
      text-align: center;
 }
-.thirdFirst img{
-     /* width: 400px; */
-     /* width: auto; */
-}
+
 .thirdSecond{
      padding-inline:50px;
 }
@@ -220,7 +217,8 @@ footer{
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
-     /* margin-bottom: 0; */
+     background-color: rgb(219, 198, 157);
+ 
 }
 .footerInner-4{
      margin-inline-start:10px ;
@@ -403,10 +401,13 @@ footer{
      margin: 10px;
 }
 .fa-instagram{
-     color: rgba(128, 0, 128, 0.801);
+     color: rgba(172, 23, 172, 0.849);
 }
 .fa-twitter{
-     color: rgb(88, 88, 236);
+     color: rgba(88, 88, 236, 0.767);
+}
+.fa-facebook{
+     color: rgba(0, 0, 255, 0.829);
 }
 
 
