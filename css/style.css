@@ -23,11 +23,10 @@
 
 body {
      /* padding-inline: 15px; */
-     /* background: rgb(236, 229, 236); */
+     background-color: whitesmoke;
      margin-block-end: 0;
      width: 100%;
-     /* padding: 10px; */
-     background-color: rgb(230, 219, 199);
+     /* background-color: rgb(230, 219, 199); */
 }
 /* 
 {
@@ -112,7 +111,8 @@ img{
      transition: all 0.5s;
 }
 .menu_bar ul li :hover{
-     color: rgb(216, 169, 81);;
+     /* color: rgb(216, 169, 81); */
+     color: white;
 }
 .dropdown_menu{
      display: none;
@@ -122,8 +122,8 @@ img{
      position: absolute;
      left: 0;
      top: 100%;
-     /* background-color: rgb(90,183,198); */
-     background-color: rgb(219, 198, 157); 
+     background-color: rgb(138, 112, 138);
+     /* background-color: rgb(219, 198, 157);  */
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -145,7 +145,7 @@ img{
  header{
      text-transform: uppercase;
      font-weight:200;
-     background-color: rgb(219, 198, 157);
+     background-color: rgb(138, 112, 138);
 }
 #siteLogo{
      font-style: italic;
@@ -169,6 +169,7 @@ a{
 .firstSectionOf1stPage img{
      height: 700px;
      border-radius: 3px;
+     margin-inline-start:70px ;
 }
 
 .secondSectionOf1stPage{
@@ -217,7 +218,8 @@ footer{
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
-     background-color: rgb(219, 198, 157);
+     background-color: rgb(138, 112, 138);
+     /* background-color: rgb(219, 198, 157); */
  
 }
 .footerInner-4{
@@ -288,19 +290,19 @@ footer{
 /* wedding page    */
 
 .Weddingcake-1{
-     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+     background-image: url(/img/annie-spratt-_4iLsr5p-dY-unsplash.jpg);
 }
 .Weddingcake-2{
-     background-image: url(/img/wedding-dreamz-YAZvMNdxFSY-unsplash.jpg);
+     background-image: url(/img/thomas-william-U7N6XFvTBjU-unsplash.jpg);
 }
 .Weddingcake-3{
-     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+     background-image: url(/img/deva-williamson-tW0Ix_Ajg6Y-unsplash\ \(1\).jpg);
 }
 .Weddingcake-4{
-     background-image: url(/img/mike-meeks-zk-fclJdGas-unsplash.jpg);
+     background-image: url(/img/jason-leung-fXAuCMEYGY4-unsplash.jpg);
 }
 .Weddingcake-5{
-     background-image: url(/img/wedding-dreamz-YAZvMNdxFSY-unsplash.jpg);
+     background-image: url(/img/imants-kaziluns-Z30Jpgmx2UY-unsplash.jpg);
 }
 .Weddingcake-6{
      background-image: url(/img/thomas-william-U7N6XFvTBjU-unsplash.jpg);
@@ -433,6 +435,7 @@ footer{
      .firstSectionOf1stPage img{
           width: 100%;
           height: auto;
+          margin-inline-start: 0;
      }
      .secondSectionOf1stPage{
           width: 100%;
