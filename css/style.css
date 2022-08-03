@@ -22,21 +22,10 @@
 /*******************************************/
 
 body {
-     /* padding-inline: 15px; */
      background-color: whitesmoke;
      margin-block-end: 0;
      width: 100%;
-     /* background-color: rgb(230, 219, 199); */
 }
-/* 
-{
-font-family: 'El Messiri', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Send Flowers', cursive;
-font-family: 'Yeseva One', cursive;
-
-} */
 
 
 /******************************************
@@ -49,13 +38,13 @@ html{
      color: rgba(0, 0, 0, 0.829);
 }
 h1{
-     font-family: 'El Messiri', sans-serif;
+     /* font-family: 'Roboto Slab', serif; */
      font-weight: 100;
      font-size: 3.5rem;
      color: black;
 }
 p{
-     font-family: 'El Messiri', sans-serif;
+     font-family: 'Roboto', sans-serif;
      font-size: 1.2rem;
 }
 h3{
@@ -66,6 +55,7 @@ h3{
 }
 h4{
      text-transform: uppercase;
+     font-size: 1.2rem;
 }
 .button{
      padding: 10px;
@@ -74,7 +64,7 @@ img{
      border-radius: 3px;
 }
 #firstPage, #secondPage, #thirdPage, #footer{
-     margin-block: 90px;
+     margin-block: 28px;
 }
 
 
@@ -140,8 +130,6 @@ img{
      padding-top: 3px;
 }
 
-
-
  header{
      text-transform: uppercase;
      font-weight:200;
@@ -157,25 +145,20 @@ a{
      font-size: 1rem;
 }
 
-
-
 /* firstpage */
 #firstPage{
      display: flex;
      justify-content: center;
      text-align: center;
 }
-
 .firstSectionOf1stPage img{
      height: 700px;
      border-radius: 3px;
-     margin-inline-start:70px ;
+     margin-inline-start:50px;
 }
-
 .secondSectionOf1stPage{
-     padding-inline: 100px;
+     padding-inline: 70px;
      text-align: center;
-     /* width: 50%; */
 }
 #secondPage {
      text-align: center;
@@ -192,10 +175,14 @@ a{
 }
 #thirdPage{
      display: flex;
-     /* height: 500px; */
 }
 .thirdFirst, .thirdSecond{
      text-align: center;
+}
+.thirdFirst img{
+     height: 650px;
+     border-radius: 3px;
+     margin-inline-start: 40px;
 }
 
 .thirdSecond{
@@ -214,13 +201,10 @@ footer{
      justify-content: space-between;
      text-align: center;
      border-top: 2px solid rgba(0, 0, 0, 0.274);
-     /* background-color: rgb(137, 120, 151); */
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
      background-color: rgb(138, 112, 138);
-     /* background-color: rgb(219, 198, 157); */
- 
 }
 .footerInner-4{
      margin-inline-start:10px ;
@@ -312,12 +296,11 @@ footer{
 
 /* About us page */
 #ourStoryFirstPage{
-     margin-top: 100px;
+     margin-top: 10px;
 }
 
 .aboutStoryLine-1,.aboutStoryLine-2{
      text-align: center;
-
 }
 .bakersImageAndFirstStory{
      display: flex;
@@ -342,7 +325,7 @@ footer{
      -webkit-backdrop-filter: blur(10px);
      backdrop-filter: blur(10px);
      background-repeat: no-repeat;
-     background-size:cover;
+     background-size:contain;
      background-position:center;
      padding: 100px 40px;
      height: 500px;
@@ -350,10 +333,6 @@ footer{
 }
 #ourStoryLastPage h4, h2{
      color: black;
-}
-
-.curvyStyle{
-     font-family:'Great Vibes', cursive;;
 }
 #ourStoryLastPage h2{
      font-size: 2.5rem;
@@ -406,23 +385,21 @@ footer{
      color: rgba(172, 23, 172, 0.849);
 }
 .fa-twitter{
-     color: rgba(88, 88, 236, 0.767);
+     color: rgba(95, 95, 216, 0.685);
 }
 .fa-facebook{
-     color: rgba(0, 0, 255, 0.829);
+     color: rgba(0, 0, 255, 0.671);
 }
 .fa-whatsapp{
      color: rgb(52, 160, 52);
 }
 
-
-
-
-
-
 @media screen and (max-width: 925px){
      h3{
           font-size: 2.5rem;
+     }
+     p{
+          color: rgba(0, 0, 0, 0.521);
      }
      #firstPage, #secondPage, #thirdPage{
           padding: 15px;
@@ -436,6 +413,11 @@ footer{
           width: 100%;
           height: auto;
           margin-inline-start: 0;
+     }
+     .thirdFirst img{
+          width: 100%;
+          height: auto;
+          margin-inline-start:0;
      }
      .secondSectionOf1stPage{
           width: 100%;
@@ -459,7 +441,12 @@ footer{
      }
      .thirdFirst img{
           width: 100%;
+          height: auto;
+          margin-inline-start:0;
      }
+     .thirdSecond {
+          padding-inline: 10px;
+      }
      footer{
        flex-direction: column;
        justify-content: center;
@@ -473,9 +460,9 @@ footer{
      .bakersImageAndFirstStory img{
           height: auto;
           width: 100%;
-          padding: 5px;
-          
+          padding: 1px;
      }
+
      /* celebrtion page */
      #imagesOfCelebration{
           grid-template-columns: repeat(2,1fr);
@@ -499,16 +486,15 @@ footer{
           font-size: 2rem;
      }
      #firstPage, #secondPage, #thirdPage, #footer{
-          margin-block: 40px;
+          margin-block: 5px;
      }
      #firstPage{
-          margin-top: 10px;
+          margin-top: 5px;
      }
      
      #imagesOfCelebration{
           grid-template-columns: repeat(1,1fr);
           gap: 10px;
-          /* background-color: brown; */
      }
      #contactFilling{
           display: flex;
@@ -524,7 +510,6 @@ footer{
      }
      .aboutStoryLine-2{
           padding: 20px;
-          /* justify-content: center; */
           align-items: center;
      }
      #ourStoryLastPage{
@@ -560,10 +545,7 @@ footer{
 /* @media screen and (max-width: 600px){
 
 }
-.menu_bar img{
-     height: 19%;
-     width:auto;
-} */
+
 
    
 
