@@ -22,9 +22,10 @@
 /*******************************************/
 
 body {
-     background-color: whitesmoke;
+     background-color: white;
      margin-block-end: 0;
      width: 100%;
+     padding: 0;
 }
 
 
@@ -34,18 +35,21 @@ body {
 
 html{
      font-size: 16px;
-     padding: 10px;
      color: rgba(0, 0, 0, 0.829);
 }
 h1{
      /* font-family: 'Roboto Slab', serif; */
-     font-weight: 100;
-     font-size: 3.5rem;
+     font-weight: 400;
+     font-size: 3rem;
      color: black;
+     text-transform: capitalize;
+     /* font-family: 'Quicksand', sans-serif; */
+     font-style: italic;
 }
 p{
      font-family: 'Roboto', sans-serif;
-     font-size: 1.2rem;
+     font-size: 1.1rem;
+     /* text-align: center; */
 }
 h3{
      font-family: 'Great Vibes', cursive;
@@ -58,19 +62,25 @@ h4{
      font-size: 1.2rem;
 }
 .button{
-     padding: 10px;
+     /* padding: 10px; */
+     /* border-radius: 19px; */
+     padding: 13px;
+     margin-inline: 40px;
 }
 img{
      border-radius: 3px;
 }
-#firstPage, #secondPage, #thirdPage, #footer{
+#firstPage{
+
+}
+#secondPage, #thirdPage, #footer{
      margin-block: 28px;
 }
 
 
 
 .menu_bar{
-     border-bottom: 2px solid  rgba(0, 0, 0, 0.274);
+     /* border-bottom: 2px solid  rgba(0, 0, 0, 0.274); */
      height: 120px;
      width: 100%;
      display: flex;
@@ -78,9 +88,12 @@ img{
      justify-content:  space-between;
      padding-block:0 ;
      padding-inline: 5%;
-     text-transform: uppercase;
+     /* text-transform: uppercase; */
      border-radius: 5px;
+     font-family: 'Quicksand', sans-serif;
 }
+
+/* website logo height and background color  */
 .menu_bar #websiteLogo{
      height: 100%;
      cursor: pointer;
@@ -95,15 +108,15 @@ img{
      position: relative;
 }
 .menu_bar ul li a{
-     color: rgba(0, 0, 0, 0.514);
+     color: white;
      text-decoration: none;
      font-size: 1.2rem;
      transition: all 0.5s;
 }
-.menu_bar ul li :hover{
-     /* color: rgb(216, 169, 81); */
+/* .menu_bar ul li :hover{
+     color: rgb(216, 169, 81);
      color: white;
-}
+} */
 .dropdown_menu{
      display: none;
 }
@@ -112,8 +125,8 @@ img{
      position: absolute;
      left: 0;
      top: 100%;
-     background-color: rgb(138, 112, 138);
-     /* background-color: rgb(219, 198, 157);  */
+     /* background-color: rgba(0, 0, 0, 0.892); */
+     background-color: black; 
 }  
 .menu_bar ul li:hover .dropdown_menu ul{
      display: block;
@@ -124,16 +137,21 @@ img{
      width: 150px;
      padding: 10px;
 }
+/* color of inner anchor tag on hover  */
+.menu_bar ul li:hover .dropdown_menu ul a{
+     color: white;
+}  
 .fa-solid{
      float: right;
      margin-left:10px;
      padding-top: 3px;
 }
 
+/* header background color and font weight */
  header{
      text-transform: uppercase;
      font-weight:200;
-     background-color: rgb(138, 112, 138);
+     background-color: black;
 }
 #siteLogo{
      font-style: italic;
@@ -150,14 +168,25 @@ a{
      display: flex;
      justify-content: center;
      text-align: center;
+     background-image: url(/img/pexels-miriam-salgado-10733586.jpg);
+     height: 100vh;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-top: 30px;
+}
+.firstSectionOf1stPage{
+     /* width: 100%; */
+     margin-inline-start:20px;
 }
 .firstSectionOf1stPage img{
-     height: 700px;
+     /* height: 700px; */
+     height: 675px;
      border-radius: 3px;
-     margin-inline-start:50px;
 }
 .secondSectionOf1stPage{
-     padding-inline: 70px;
+     padding-inline-start: 90px;
+     padding-inline-end: 60px;
      text-align: center;
 }
 #secondPage {
@@ -204,10 +233,17 @@ footer{
      padding-bottom: 100px;
      padding-inline: 10px;
      border-radius: 5px;
-     background-color: rgb(138, 112, 138);
+     background-color: black;
+     color: white;
+}
+footer h3{
+     color: white;
 }
 .footerInner-4{
      margin-inline-start:10px ;
+}
+footer input{
+     padding: 5px
 }
 
 .social a{
@@ -322,15 +358,12 @@ footer{
 #ourStoryLastPage{
      text-align: center;
      background-image: url(/img//cover.png);
-     -webkit-backdrop-filter: blur(10px);
-     backdrop-filter: blur(10px);
+     background-size: cover;
      background-repeat: no-repeat;
-     background-size:contain;
      background-position:center;
-     padding: 100px 40px;
-     height: 500px;
-     margin: 10px;
+     height: 400px;
 }
+
 #ourStoryLastPage h4, h2{
      color: black;
 }
@@ -354,14 +387,17 @@ footer{
 .contactForm input{
      padding: 20px;
      margin-block-end: 20px;
+     background-color:rgba(248, 248, 248, 0.979);
+     border: 1px solid black;
 }
 #writeYourMessage{
      padding-bottom: 100px;
 }
 .contactForm button{
-     padding: 12px;
-     margin-inline: 30%;
-}
+     padding: 13px;
+     margin-inline: 40px;
+     border-radius: 19px;
+ }
 #contactFilling{
      display: flex;
      flex-direction: row;
@@ -398,11 +434,12 @@ footer{
      h3{
           font-size: 2.5rem;
      }
-     p{
-          color: rgba(0, 0, 0, 0.521);
-     }
+
      #firstPage, #secondPage, #thirdPage{
           padding: 15px;
+     }
+     #firstPage{
+          height: 100%;
      }
      #firstPage, #thirdPage{
           flex-direction: column;
@@ -512,13 +549,7 @@ footer{
           padding: 20px;
           align-items: center;
      }
-     #ourStoryLastPage{
 
-          height: 400px;
-          padding: 0;
-          margin: 0;
-          padding-block-start: 100px;
-     }
      #firstPageOfCelebration img{
           width: 100%;
           height: 400px;
@@ -530,14 +561,11 @@ footer{
           padding-top: 3px;
      }
      #footer{
-          /* color: red; */
           margin-bottom: 10px;
           padding-bottom: 20px;
      }
      #button{
-          background-color: rgb(223, 195, 143);
-          color: rgba(0, 0, 0, 0.644);
-          border-radius: 2px;
+          border-radius: 19px;
           border: 1px solid rgba(0, 0, 0, 0.342);
      }
 }
